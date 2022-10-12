@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Hello World by Richo</title>
+    <link rel="stylesheet" href="style/main.css" />
 </head>
-<body>
+<body bgcolor="#131315">
     <section>
-        <div>
-            <h1>Hello World</h1>
-        </div>
-        <div>
-            <p>
-                Please fill this form first,<br>before you get into the home page
-            </p>
-        </div>
-        <div>
-            <form action="home.html">
-                <p>Name</p>
-                <input type="text" name="name" placeholder="your name">
-                <p>Password</p>
-                <input type="password" name="password" placeholder="password">
-                <p>Date</p>
-                <input type="date" name="date" placeholder="dd/mm/yy"><br><br>
-                <button type="submit"><font color="#0be881"><strong>Submit</strong></font></button>
-                <button type="reset"><font color="#f53b57"><strong>Clear</strong></font></button> 
-            </form>
-        </div>  
-    </section>
+        <header>
+            <section>
+                <div align="center" class="header">
+                    <h1 class="logo"><img src="assets/helloworld.png" width="100">Hello World</h1>
+                </div>
+                    <nav class="navigation">
+                <div class="container">
+                        <ul class="login">
+                            <li><a href="index.html">Login</a></li>
+                        </ul>
+                    </nav>
+               </div>
+            </section>
+        </header>            
+    <div class="login-box">
+        <h2>Login</h2><br>
+        <p align="center">
+            <font color="white">Please fill this form first,<br>before you get into the home page</font>
+        </p>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>
+            <div class="button-form">
+                <a id="submit" href="home.html">
+                   Submit
+                </a>
+            </div>
+            <div id="register">
+                Don't have an account ?
+                <a href="index copy.html">
+                    Register
+                </a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
