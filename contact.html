@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata-Contact</title>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Richo.S</a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-link">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="login-box">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Email</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Your Massage</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Send
+              </a>
+            </form>
+          </div>    
+      </header>
+
+    <script>
+        function rain(){
+            let amount = 400;
+            let body = document.querySelector('body');
+            let i = 0;
+            while(i < amount){
+                let drop = document.createElement('i');
+
+                let size = Math.random() * 5;
+                let posX = Math.floor(Math.random() * window.innerWidth);
+                let delay = Math.random() * -400;
+                let duration = Math.random() * 25;
+
+                drop.style.width = 0.2 + size+'px'; 
+                drop.style.left = posX + 'px';
+                drop.style.animationDelay = delay+'s';
+                drop.style.animationDuration = 1 + duration+'s';
+                body.appendChild(drop);
+                i++
+            }
+        }
+
+        rain();
+    </script>
+</body>
+</html>
