@@ -162,3 +162,11 @@ section img#mountains_front{
     background-color: #fff;
     border-radius: 10px;
 }
+.go{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.let{
+    margin-bottom: 100px;
+}
